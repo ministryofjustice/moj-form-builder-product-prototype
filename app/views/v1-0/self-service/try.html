@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form class="form" action="#" method="post">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Try GOV.UK Submit
+      </h1>
+      <p class="govuk-body-l">First you'll need to create an account.</p>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Name
+        </label>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Team
+        </label>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Email
+        </label>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+      <button class="govuk-button" data-module="govuk-button">
+        Create an account
+      </button>
+      <p class="govuk-body">
+        <a href="/sign-in">
+          Sign in
+        </a>
+      </p>
+    </div>
+  </div>
+
+</form>
+
+{% endblock %}

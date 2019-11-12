@@ -1,0 +1,187 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+@media (min-width: 40.0625em) {
+    .app-masthead {
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .app-masthead {
+        margin-top: 0;
+        margin-left: -200px;
+        margin-right: -200px;
+    }
+}
+
+.app-masthead {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    background-color: #1d70b8;
+}
+
+
+.app-masthead--self-service {
+    background-color: #1d70b8;
+}
+
+.app-masthead--supported {
+    background-color: #4c2c92;
+}
+
+@media (min-width: 40.0625em) {
+    .app-pane__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-width: 0;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .app-masthead__title {
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+}
+
+.app-masthead__title {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.app-masthead__description {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.11111;
+    margin-bottom: 0;
+}
+
+@media (min-width: 40.0625em) {
+    .app-masthead__description {
+        font-size: 24px;
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+}
+
+.app-button--inverted,
+.app-button--inverted:link,
+.app-button--inverted:visited {
+    color: #1d70b8;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 0 #144e81;
+    box-shadow: 0 2px 0 #144e81;
+}
+
+.app-link--inverted,
+.app-link--inverted:link,
+.app-link--inverted:visited {
+    color: #fff;
+}
+
+/* App navigation */
+
+@media (min-width: 40.0625em) {
+    .app-navigation {
+        font-size: 19px;
+        font-size: 1.1875rem;
+        line-height: 1.31579;
+    }
+}
+
+.app-navigation {
+    font-family: "GDS Transport", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-top: -50px;
+    padding-left: 15px;
+}
+
+.app-navigation__list {
+    position: relative;
+    left: -15px;
+    padding: 0;
+    list-style: none;
+}
+
+.app-navigation__list-item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    height: 50px;
+    padding: 0 15px;
+    float: left;
+    line-height: 50px;
+}
+
+.app-navigation__list {
+    position: relative;
+    left: -15px;
+    padding: 0;
+    list-style: none;
+}
+
+.app-navigation__link:not(:focus):visited {
+    color: #1d70b8;
+}
+
+.govuk-link--no-visited-state:visited {
+    color: #1d70b8;
+}
+
+.govuk-link--no-visited-state:link {
+    color: #1d70b8;
+}
+
+.govuk-link:visited,
+.app-prose-scope a:visited {
+    color: #4c2c92;
+}
+
+.app-navigation__list-item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    height: 50px;
+    padding: 0 15px;
+    float: left;
+    line-height: 50px;
+}
