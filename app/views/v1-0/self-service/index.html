@@ -46,6 +46,16 @@ GOV.UK Prototype Kit
   </div>
 </div>
 
+{%- from "moj/components/organisation-switcher/macro.njk" import mojOrganisationSwitcher -%}
+
+{{ mojOrganisationSwitcher({
+text: 'HMP Sheppey Cluster (Swaleside)',
+link: {
+text: 'Change prison',
+href: '#'
+}
+}) }}
+
 <div class="govuk-grid-row" style="margin-top:50px;">
   <div class="govuk-grid-column-full">
     <h2 class="govuk-heading-l">
