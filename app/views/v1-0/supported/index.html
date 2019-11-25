@@ -6,6 +6,7 @@ GOV.UK Prototype Kit
 
 {% block content %}
 
+<!--
 <nav class="app-navigation govuk-clearfix">
   <ul class="app-navigation__list govuk-width-container">
     <li class="app-navigation__list-item">
@@ -21,18 +22,21 @@ GOV.UK Prototype Kit
     </li>
   </ul>
 </nav>
+-->
 
-<div class="app-masthead app-masthead--supported">
+<div class="app-masthead app-masthead--supported" style="margin-top:-60px;">
   <div class="govuk-width-container app-site-width-container">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl app-masthead__title">Gather data and evidence from your users</h1>
+        <h1 class="govuk-heading-xl app-masthead__title">Design and build digital services without the need for a
+          digital team.
+        </h1>
         <p class="app-masthead__description">Try GOV.UK Submit now if you work in Ministry of Justice.</p>
         <div style="margin-bottom:20px;">
           <a href="demo" role="button" draggable="false"
             class="govuk-button app-button--inverted govuk-!-margin-top-6 govuk-!-margin-bottom-0 govuk-button--start"
             data-module="govuk-button">
-            Book a demo
+            Create an account
           </a>
         </div>
         <div style="margin-bottom:40px;">
@@ -45,6 +49,7 @@ GOV.UK Prototype Kit
   </div>
 </div>
 
+<!---
 <div class="govuk-grid-row" style="margin-top:50px;">
   <div class="govuk-grid-column-one-third">
     <h2 class="govuk-heading-l">
@@ -71,68 +76,81 @@ GOV.UK Prototype Kit
     </p>
   </div>
 </div>
+-->
 
-<div class="govuk-grid-row">
+
+<div class="govuk-grid-row" style="margin-top:50px;">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l">
+      Who’s it for
+    </h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>For all agencies across the Ministry of Justice</li>
+    </ul>
+  </div>
+</div>
+
+<div class="govuk-grid-row" style="margin-top:30px;">
   <div class="govuk-grid-column-full">
     <h2 class="govuk-heading-l">
       Benefits
     </h2>
     <ul class="govuk-list govuk-list--bullet">
-      <li>supports commitments set out in the Government Digital Strategy on how the government will become digital by
-        default.
-      </li>
-      <li>
-        provides a feedback loop from frontline staff to caseworkers
-      </li>
-      <li>
-        gives insights as to where users are having trouble with analytics
-      </li>
+      <li>Get a service online quicker and cheaper</li>
+      <li>Easy to maintain</li>
+      <li>Avoid the cost of investing in tools to build your own service</li>
+      <li>Uses recognised GOV.UK design patterns</li>
+      <li>Get quicker feedback from stakeholders (policy teams and frontline staff)</li>
     </ul>
   </div>
 </div>
 
-<div class="govuk-grid-row">
+<div class="govuk-grid-row" style="margin-top:30px;">
   <div class="govuk-grid-column-full">
     <h2 class="govuk-heading-l">
       Support
     </h2>
     <ul class="govuk-list govuk-list--bullet">
-      <li>
-        work with you on how to use design to improve the service
-      </li>
-      <li>
-        Content Design support to help to design forms in a way that significantly
-        improves the experience for users.
-      </li>
-      <li>
-        help you think about how to change business processes to support an online service
-      </li>
-      <li>
-        conduct usability testing of forms with users
-      </li>
-      <li>
-        help maintain a service once it's live
-      </li>
+      <li>Work with you to help design a better service</li>
+      <li>Conduct usability testing of forms with users</li>
+      <li>We’ll publish and host the service for you</li>
+      <li>Technical support offered through MOJ</li>
+      <li>Provide analytics so you can see whether users are finding your service difficult</li>
     </ul>
   </div>
 </div>
 
-<div class="govuk-grid-row">
+<div class="govuk-grid-row" style="margin-top:30px;">
   <div class="govuk-grid-column-full">
     <h2 class="govuk-heading-l">
-      About the Government Digital Strategy
+      Why make services digital?
     </h2>
-    <p class="govuk-body">The <a
-        href="https://www.gov.uk/government/publications/government-digital-strategy/government-digital-strategy">Government
-        Digital Strategy</a> sets out how the government will become digital by default.
-    </p>
+    <p class="govuk-body">Digital services are better for users. Online, you can:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>services need to meet the needs of their users across all channels</li>
-      <li>become an organisation that is digital by default</li>
-      <li>ensure that government data is properly managed, protected and (where non-sensitive) made available and shared
-        effectively</li>
-      <li>creating shared platforms, components and reusable business capabilities: continuing with government as a
-        platform, reducing duplication, cost and increasing efficiency across government</li>
+      <li>Reduce the number of user errors</li>
+      <li>Reduce paper processing</li>
+      <li>Reduce time spent on manual data entry</li>
+      <li>Provides an easy way for policy teams to gather feedback from frontline staff</li>
+      <li>Reduce the marginal cost of transactions for legal professionals and administration</li>
+      <li>Provide detailed quantitative analysis for which parts of the forms users find difficult</li>
+      <li>Reduce the amount of unnecessary contact time where users call, email or come in person to ask “where’s my
+        thing?”. (With the use of GOV.UK Notify</li>
+      <li>No lengthy contract</li>
+      <li>Understand your users better and respond to their feedback</li>
+      <li>Simplify complicated guidance and user journeys</li>
+      <li>Offer assistance to users with accessibility needs </li>
+    </ul>
+  </div>
+</div>
+
+<div class="govuk-grid-row" style="margin-top:30px;">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l">
+      You’ll need
+    </h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>To follow the GDS Service Standards</li>
+      <li>You service should have less than 100,000 transactions a year. If it has more than 100,000 transactions, contact the MOJ Digital team.</li>
     </ul>
   </div>
 </div>
