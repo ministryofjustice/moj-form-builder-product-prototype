@@ -1,0 +1,60 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/header.html" %}
+
+<div class="govuk-width-container app-site-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              How old are you?
+            </h1>
+          </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
+                value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                under 18
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
+                value="scotland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                18 to 65
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio"
+                value="wales">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                Over 65
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div style="margin-bottom:20px;">
+        <a href="#" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Continue
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% include "../../includes/footer.html" %}
+
+{% endblock %}

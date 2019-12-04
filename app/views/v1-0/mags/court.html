@@ -8,25 +8,29 @@ GOV.UK Prototype Kit
 
 {% include "includes/header.html" %}
 
-<div class="app-masthead app-masthead--self-service">
-  <div class="govuk-width-container app-site-width-container">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <div class="govuk-form-group">
-          <label class="govuk-heading-xl" for="event-name">
-            Which court are you applying to?
-          </label>
-          <input class="govuk-input" id="event-name" name="event-name" type="text">
-        </div>
-        <div style="margin-bottom:20px;">
-          <a href="name" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-            Continue
-          </a>
-        </div>
+<div class="govuk-width-container app-site-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+        <label class="govuk-heading-xl" for="event-name" style="margin-bottom:10px;">
+          Where is the vacancy?
+        </label>
+        <span id="event-name-hint" class="govuk-hint">
+          You are expected to be living or working in, or reasonably close to, the area in which they wish to serve.
+        </span>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
       </div>
+      <div style="margin-bottom:20px;">
+        <a href="age" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          Continue
+        </a>
+      </div>
+
     </div>
   </div>
 </div>
+
 
 {% include "../../includes/footer.html" %}
 
