@@ -1,4 +1,4 @@
-{% extends "layout_unbranded.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 GOV.UK Prototype Kit
@@ -6,26 +6,22 @@ GOV.UK Prototype Kit
 
 {% block content %}
 
-{% include "includes/header.html" %}
-
-<div class="app-masthead app-masthead--self-service">
-  <div class="govuk-width-container app-site-width-container">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl app-masthead__title">Apply to be a magistrate</h1>
-        <p class="app-masthead__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ante
-          eu neque accumsan, sit amet condimentum augue luctus.
-        </p>
-        <div style="margin-bottom:20px;">
-          <a href="court" role="button" draggable="false"
-            class="govuk-button app-button--inverted govuk-!-margin-top-6 govuk-!-margin-bottom-0 govuk-button--start"
-            data-module="govuk-button">
-            Start now
-          </a>
-        </div>
+<div class="govuk-width-container app-site-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Apply to be a magistrate</h1>
+      <p class="govuk-body-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt ante
+        eu neque accumsan, sit amet condimentum augue luctus.
+      </p>
+      <div style="margin-bottom:20px;">
+        <a href="court" role="button" draggable="false" class="govuk-button govuk-button--start"
+          data-module="govuk-button">
+          Start now
+        </a>
       </div>
     </div>
   </div>
 </div>
+
 
 {% endblock %}
