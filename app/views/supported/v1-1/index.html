@@ -6,6 +6,7 @@ GOV.UK Prototype Kit
 
 {% block content %}
 
+
 <!--
 <nav class="app-navigation govuk-clearfix">
   <ul class="app-navigation__list govuk-width-container">
@@ -24,15 +25,15 @@ GOV.UK Prototype Kit
 </nav>
 -->
 
-<div class="app-masthead app-masthead--supported" style="margin-top:-60px;">
+<div class="app-masthead app-masthead--supported">
   <div class="govuk-width-container app-site-width-container">
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-column-three-quarters">
         <h1 class="govuk-heading-xl app-masthead__title">Get help to simplify your processes and manage data more
           effectively.
         </h1>
-        <p class="app-masthead__description">Our team of digital specialists work with you to design and build new
-          online services so you can focus on achieving your goals.
+        <p class="app-masthead__description">
+          A service for all agencies across the Ministry of Justice.
         </p>
         <div style="margin-bottom:20px;">
           <a href="demo" role="button" draggable="false"
@@ -75,11 +76,36 @@ GOV.UK Prototype Kit
 </div>
 -->
 
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body-l">
+      Our team of digital specialists work with you to design and build new
+      online services so you can focus on achieving your goals.
+    </p>
+  </div>
+</div>
 
-<div class="govuk-grid-row" style="margin-top:50px;">
-  <div class="govuk-grid-column-full">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l">
-      Better for services and users
+      What we do
+    </h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Use your insights and data to identify issues and opportunities</li>
+      <li>Provide recommendations for service improvements</li>
+      <li>Design and build your new service</li>
+      <li>Test with users and refine based on feedback</li>
+      <li>Publish and host the service for you</li>
+      <li>Provide data on how your service is performing</li>
+      <li>Provide ongoing support and maintenance</li>
+    </ul>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">
+      Better services for users
     </h2>
     <ul class="govuk-list govuk-list--bullet">
       <li>Make justice services easier for citizens</li>
@@ -96,36 +122,8 @@ GOV.UK Prototype Kit
   </div>
 </div>
 
-<div class="govuk-grid-row" style="margin-top:30px;">
-  <div class="govuk-grid-column-full">
-    <h2 class="govuk-heading-l">
-      What we do
-    </h2>
-    <ul class="govuk-list govuk-list--bullet">
-      <li>Use your insights and data to identify issues and opportunities</li>
-      <li>Provide recommendations for service improvements</li>
-      <li>Design and build your new service</li>
-      <li>Test with users and refine based on feedback</li>
-      <li>Publish and host the service for you</li>
-      <li>Provide data on how your service is performing</li>
-      <li>Provide ongoing support and maintenance</li>
-    </ul>
-  </div>
-</div>
-
-<div class="govuk-grid-row" style="margin-top:30px;">
-  <div class="govuk-grid-column-full">
-    <h2 class="govuk-heading-l">
-      Who this is for
-    </h2>
-    <p class="govuk-body">
-      MOJ Submit is open to all agencies across the Ministry of Justice.
-    </p>
-  </div>
-</div>
-
-<div class="govuk-grid-row" style="margin-top:30px;">
-  <div class="govuk-grid-column-full">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l">
       What you’ll need
     </h2>
@@ -142,8 +140,28 @@ GOV.UK Prototype Kit
   </div>
 </div>
 
-<div class="govuk-grid-row" style="margin-top:30px;">
+<div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l">
+      Introducing MOJ Submit
+    </h2>
+    <div class="responsive-embed responsive-embed--16by9 responsive-embed--bordered bottom-gutter-2">
+      <div class="responsive-embed__wrapper">
+        <iframe width="960" height="540" src="https://www.youtube-nocookie.com/embed/_90cv1YgQo4" frameborder="0"
+          allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l">
       Who’s using MOJ Submit
     </h2>
@@ -161,4 +179,29 @@ GOV.UK Prototype Kit
   </div>
 </div>
 
-{% endblock %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-l">
+      The team
+    </h2>
+    <p>
+      MOJ Submit is built by the MOJ Digital and is supported Monday to Friday during working hours.
+    </p>
+    <p>
+<a href="#">Contact us</a> if you have a question or want to give feedback.
+    </p>
+  </div>
+  <div class="govuk-grid-column-one-half">
+    <div>
+      <img src="https://static.notifications.service.gov.uk/images/product/team.jpg" width="100%">
+    </div>
+  </div>
+
+
+  {% endblock %}
