@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form class="form" action="demo-confirmation" method="post">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Book a demo
+      </h1>
+      <p class="govuk-body-l">Lorem ipsum dolor.</p>
+      <h2 class="govuk-heading-l">
+        Before you start
+      </h2>
+      <p class="govuk-body">
+        You will need:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the names of the teams and individuals who are involved in creation and processing of the service.
+        </li>
+        <li>buy in from senior decision makers</li>
+        <li>stakeholders such as policy makers and
+          security</li>
+      </ul>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Name
+        </label>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Team
+        </label>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Email
+        </label>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+      <button class="govuk-button" data-module="govuk-button">
+        Book a demo
+      </button>
+    </div>
+  </div>
+
+</form>
+
+{% endblock %}
