@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: formbuilder-submit-product
+  labels:
+    app: formbuilder-submit-product
+spec:
+  ports:
+  - port: 3000
+    name: http
+    targetPort: 3000
+  selector:
+    app: formbuilder-submit-product
