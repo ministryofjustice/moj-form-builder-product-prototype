@@ -31,6 +31,9 @@ jobs:
       - run:
           name: 'kubectl apply'
           command: "kubectl apply --filename deploy/ --namespace formbuilder-submit-product-production"
+      - run:
+          name: 'rollout deployment'
+          command: "kubectl rollout restart deployments -n formbuilder-submit-product-production"
 
 workflows:
   version: 2
